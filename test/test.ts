@@ -8,7 +8,8 @@ describe("Logic", function () {
         const Logic = await ethers.getContractFactory("LogicV1");
         const LogicV2 = await ethers.getContractFactory("LogicV2");
         // deploy
-        const instance = await upgrades.deployProxy(Logic, [100]);
+        const instance = await upgrades.deployProxy(Logic, [toWei("100")]);
+        expect((await instance.value())).to.equal(toWei("100"));
 
         await instance.setValue(toWei("150"), toWei("10"));
         expect((await instance.value())).to.equal(toWei("160"));
