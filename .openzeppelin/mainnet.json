@@ -1,0 +1,43 @@
+{
+  "manifestVersion": "3.1",
+  "impls": {
+    "52f11d8bd0fdd0156e4ae42c5258e8b9baa500593b14f94db917c72e02d1e82e": {
+      "address": "0xc6e7DF5E7b4f2A278906862b61205850344D4e7d",
+      "txHash": "0x1ca3bdf11f906c14d878851f90221a0070bc24c678607d44296b85edd6d81676",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:25"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:30"
+          },
+          {
+            "contract": "LogicV1",
+            "label": "token",
+            "type": "t_contract(IERC20)869",
+            "src": "contracts/LogicV1.sol:10"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20)869": {
+            "label": "contract IERC20"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  },
+  "admin": {
+    "address": "0x59b670e9fA9D0A427751Af201D676719a970857b",
+    "txHash": "0xd11e1859c98bdebd2641f140a334a5860a493ec94a624987bdab7a4ec1c9c612"
+  }
+}

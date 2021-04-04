@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+
 import "./interfaces/ILogic.sol";
 
-contract LogicV2 is ERC20Upgradeable, ILogic {
-  function initialize(string memory _name, string memory _symbol)
-    public
-    override
-    initializer
-  {
-    __ERC20_init(_name, _symbol);
+contract LogicV2 is Initializable, ILogic {
+  IERC20 public token;
+
+  function initialize(IERC20 _token) public override initializer {
+    token = _token;
   }
 
-  function add(uint256 a, uint256 b) public view override returns (uint256) {
+  function add(uint256 a, uint256 b) public pure override returns (uint256) {
     return 2 * a + b;
   }
 
