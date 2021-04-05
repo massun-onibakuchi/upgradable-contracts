@@ -1,43 +1,9 @@
 {
   "manifestVersion": "3.1",
   "impls": {
-    "52f11d8bd0fdd0156e4ae42c5258e8b9baa500593b14f94db917c72e02d1e82e": {
-      "address": "0xc6e7DF5E7b4f2A278906862b61205850344D4e7d",
-      "txHash": "0x1ca3bdf11f906c14d878851f90221a0070bc24c678607d44296b85edd6d81676",
-      "layout": {
-        "storage": [
-          {
-            "contract": "Initializable",
-            "label": "_initialized",
-            "type": "t_bool",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:25"
-          },
-          {
-            "contract": "Initializable",
-            "label": "_initializing",
-            "type": "t_bool",
-            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:30"
-          },
-          {
-            "contract": "LogicV1",
-            "label": "token",
-            "type": "t_contract(IERC20)869",
-            "src": "contracts/LogicV1.sol:10"
-          }
-        ],
-        "types": {
-          "t_contract(IERC20)869": {
-            "label": "contract IERC20"
-          },
-          "t_bool": {
-            "label": "bool"
-          }
-        }
-      }
-    },
     "22c784b2f8887a1c3a8ce9e27293e5ba8cff4f0d5427c6ec622a4716a928b8d4": {
-      "address": "0xc5a5C42992dECbae36851359345FE25997F5C42d",
-      "txHash": "0xabd3b358208b954f8160187207e3195bcab067b86e096b6004fd1ddbb4ea5964",
+      "address": "0x59b670e9fA9D0A427751Af201D676719a970857b",
+      "txHash": "0x6646690aeb300a61640ecba0ebdde7f6c63099ac28d5e98893c7910a9b6c7f9b",
       "layout": {
         "storage": [
           {
@@ -70,8 +36,8 @@
       }
     },
     "8cc6ceb91cf3090bfde7d7ff30a3c31823796ad3356442f53ff1c133876efb76": {
-      "address": "0xc3e53F4d16Ae77Db1c982e75a937B9f60FE63690",
-      "txHash": "0xde4e5a0c9540189420d9d6462c866c5b42fc252721bc55c3fb38284fb22782c2",
+      "address": "0x4A679253410272dd5232B3Ff7cF5dbB88f295319",
+      "txHash": "0x7985c2ebc5c69872deea91ce1aca9b3719a9b3d92903e77348f9f6f8c6f96c5f",
       "layout": {
         "storage": [
           {
@@ -105,7 +71,7 @@
     }
   },
   "admin": {
-    "address": "0x59b670e9fA9D0A427751Af201D676719a970857b",
-    "txHash": "0xd11e1859c98bdebd2641f140a334a5860a493ec94a624987bdab7a4ec1c9c612"
+    "address": "0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1",
+    "txHash": "0x4b2a57a168a65452a473711fe968a687b397d4f7b7aa335c35605303247a83e3"
   }
 }

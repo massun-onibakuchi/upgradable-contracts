@@ -6,7 +6,7 @@ import "hardhat-typechain";
 import 'hardhat-deploy';
 import "hardhat-etherscan-abi";
 import 'hardhat-dependency-compiler';
-import '@openzeppelin/hardhat-upgrades'; // require('@openzeppelin/hardhat-upgrades');
+import '@openzeppelin/hardhat-upgrades';
 
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
